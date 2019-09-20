@@ -60,8 +60,11 @@ UIGraphicsEndImageContext()
 作製: 2019/09/19Th
 ![flipImage](image/flipImage.png =300x300)
 
-<img src="image/flipImage.png" alt="flipImage" width="33%" height="33%" />
-<<<<<<< HEAD:Readme.md
+これで行けるはずなんだが。
+
+[画像をリサイズ](https://gist.github.com/uupaa/f77d2bcf4dc7a294d109)
+
+<img src="image/flipImage.png" alt="flipImage" width="33%"  />
 
 ## gitコマンド
 
@@ -85,3 +88,11 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
 これはどう言う事なのか？
+
+```bash
+> git br -a
+* master
+  remotes/origin/master
+```
+
+Origin/masterってのがupstream(上流ブランチ)って事らしい。

@@ -101,7 +101,4 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 >git cm -a
 >git push
 ```
-
-
-
 origin/masterってのがupstream(上流ブランチ)って事らしい。

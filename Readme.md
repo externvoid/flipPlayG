@@ -76,7 +76,7 @@ git -u push origin master # originってのはremoteの別名
 
 さて、localで作業したファイルをremoteへuploadしたら、
 
-```
+```bash
 > git push -u origin master
 To https://github.com/externvoid/flipPlayground.git
  ! [rejected]        master -> master (non-fast-forward)
@@ -87,7 +87,24 @@ hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
-これはどう言う事なのか？
+これはどう言う事なのか？要するにconflictを解消してmerge(pull)しなさい。と言ってる。重要なのは、***pullとはmerge***の事。
+
+```bash
+>git pull #fetch origin/master & merge
+>vi #conflict resolved
+>git cm -a
+>git push #default動作、cloneしてきたorigin/masterへpush
+# 初回は、git clone http://externvoid/repository/flipPlayG.git
+# git push -u origin master
+```
+
+ちなみにlocalのファイル(working tree)をaddしておけば、ファイルを消しても取り戻せる
+
+```bash
+>git checkout .
+```
+
+
 
 ```bash
 > git br -a
@@ -95,10 +112,4 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
   remotes/origin/master
 ```
 
-```bash
->git pull #fetch origin/master & merge
->vi #conflict resolved
->git cm -a
->git push
-```
 origin/masterってのがupstream(上流ブランチ)って事らしい。

@@ -2,6 +2,8 @@
 
 以下はPlaygroundで動かす事が出来るコード。
 
+[Swift4でUIImageの反転](https://qiita.com/knou/items/500d2af0ceaa6ac54958)
+
 ```swift
 import UIKit
 extension UIImage {
@@ -113,3 +115,27 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
 origin/masterってのがupstream(上流ブランチ)って事らしい。
+
+## gitの不思議
+
+過去のcommitを無しにしたくて、git logしてから、rebaseしようとしたら、
+
+```bash
+> git rebase -i ca45ef79a8964f61
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+	git rebase (--continue | --abort | --skip)
+If that is not the case, please
+	rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+```
+
+## Gist投稿のMarkdownへのimage貼り付け
+
+```
+qiita://github gist markdown image
+```
+

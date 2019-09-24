@@ -141,3 +141,5 @@ qiita://github gist markdown image
 ## YouTube動画を埋め込める？
 
  <iframe src="https://www.youtube.com/embed/ycZzFc60eoA" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+[![ビデオが開けなかった場合に表示されるテキスト](http://img.youtube.com/vi/XHECZDy_ctg/0.jpg)](http://www.youtube.com/watch?v=XHECZDy_ctg)

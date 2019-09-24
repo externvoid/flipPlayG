@@ -138,4 +138,6 @@ valuable there.
 ```
 qiita://github gist markdown image
 ```
+## YouTube動画を埋め込める？
 
+ <iframe src="https://www.youtube.com/embed/ycZzFc60eoA" width="640" height="360" frameborder="0" allowfullscreen></iframe>
